@@ -1,0 +1,25 @@
+{
+  "name": "hybrid-crypto-express-ts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mini API Express + TypeScript para cifrado híbrido RSA-OAEP + AES-256-GCM.",
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  }
+}
