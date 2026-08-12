@@ -367,20 +367,7 @@ Responsabilidades:
 - `swagger`: documentación OpenAPI.
 - `app.ts`: composición y arranque de Express.
 
-## 20. Relación con los servicios base compartidos
-
-La implementación parte de la misma idea presente en los servicios entregados:
-
-- generación aleatoria de una clave AES de 32 bytes;
-- IV de 12 bytes;
-- AES-256-GCM;
-- `authTag`;
-- RSA para cifrar la clave AES;
-- Base64 para transportar los componentes por JSON.
-
-La principal mejora del mini proyecto es separar responsabilidades, validar explícitamente la existencia de las llaves y configurar RSA-OAEP con SHA-256 de forma explícita.
-
-## 21. Limitaciones de este mini proyecto
+## 20. Limitaciones de este mini proyecto
 
 Este proyecto es una demostración y no pretende ser un protocolo criptográfico para ser implementado de forma direta en producción.
 
